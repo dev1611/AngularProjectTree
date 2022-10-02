@@ -15,4 +15,13 @@ export class ProjectsService {
   create(payload: Projects) {
     return this.http.post<Projects>('http://localhost:3000/projects', payload);
   }
+  getById(id: number) {
+    return this.http.get<Projects>(`http://localhost:3000/projects/${id}`);
+   }
+   update(payload:Projects){
+    return this.http.put(`http://localhost:3000/projects/${payload.id}`,payload);
+   }
+   delete(id:number){
+    return this.http.delete<Projects>(`http://localhost:3000/projects/${id}`);
+ }
 }

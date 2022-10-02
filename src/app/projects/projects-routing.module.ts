@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomenComponent } from './homen/homen.component';
 import { CreateComponent } from './create/create.component';
+import {EditComponent} from './edit/edit.component'
 
 const routes: Routes = [{
   path:'projects/homen',
@@ -10,6 +11,10 @@ const routes: Routes = [{
 {
   path:'projects/create',
   component:CreateComponent
+},
+{
+  path:'projects/edit/:id',
+  component:EditComponent
 }
 ];
 

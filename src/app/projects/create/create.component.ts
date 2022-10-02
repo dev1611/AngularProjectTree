@@ -11,7 +11,8 @@ import { ProjectsService } from '../projects.service';
 export class CreateComponent implements OnInit {
   projectForm: Projects = {
     id: 0,
-    name: ''
+    name: '',
+    tasks:[]
    
   };
 

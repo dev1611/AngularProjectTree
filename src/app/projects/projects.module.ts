@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { ProjectsRoutingModule } from './projects-routing.module';
 import { HomenComponent } from './homen/homen.component';
 import { CreateComponent } from './create/create.component';
+import { EditComponent } from './edit/edit.component';
 
 
 @NgModule({
   declarations: [
     HomenComponent,
-    CreateComponent
+    CreateComponent,
+    EditComponent
   ],
   imports: [
     CommonModule,
